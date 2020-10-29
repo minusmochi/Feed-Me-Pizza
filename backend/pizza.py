@@ -5,5 +5,3 @@ def getPizzaTweet():
     #print (toppings [random.randint(0, len(toppings)-1)])
     topping = toppings [random.randint(0, len(toppings)-1)]
     return tweetBuilder.constructTweet(topping)
-
-#print (getPizzaTweet())
