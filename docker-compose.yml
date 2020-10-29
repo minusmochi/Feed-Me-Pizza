@@ -1,13 +1,13 @@
 services:
     frontend:
-        image: nginx:alpinez
+        image: feed-me-pizza-frontend
         build:
             context: .
             dockerfile: frontend/Dockerfile
         ports:
             - "5000:80"
     backend:
-        image: abc
+        image: feed-me-pizza-backend
         build:
             context: .
             dockerfile: backend/Dockerfile
