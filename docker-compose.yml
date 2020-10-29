@@ -13,3 +13,8 @@ services:
             dockerfile: backend/Dockerfile
         ports:
             - "5001:5000"
+    database:
+        image: 'mongo'
+        container_name: 'feed-me-pizza-database'
+        ports:
+            - '28017-28019:27017-27019'
