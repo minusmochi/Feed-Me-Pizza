@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Pizza!</h1>
+                <h1>Feed Me Pizza</h1>
                 <button id="getPizzaButton" class="btn btn-primary">Give me a pizza!</button>
                 <h3 id="pizzaResult"></h3>
             </div>
@@ -24,7 +24,7 @@
             var pizzaButton = document.getElementById("getPizzaButton")
 
         function getPizza() {
-            fetch('http://localhost:5000/pizza')
+            fetch('http://localhost:5001/pizza')
                 .then(r => {
                     r.json()
                         .then(c => resultPanel.innerText = c)
