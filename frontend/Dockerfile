@@ -1,2 +1,3 @@
 FROM nginx:alpine
-COPY frontend/. /usr/share/nginx/html
+# VOLUME [ "/data" ]
+# COPY frontend/. /usr/share/nginx/html
