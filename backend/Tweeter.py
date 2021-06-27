@@ -7,12 +7,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Tweeter:
-    url = "https://api.twitter.com/1.1/statuses/update.json?status=This is from python!"
+    url = "https://api.twitter.com/1.1/statuses/update.json?status=This is from python"
     def tweet(self):
         consumerKey = os.getenv("consumerKey")
         consumerSecret = os.getenv("consumerSecret")
         accessKey = os.getenv("accessKey")
         secret = os.getenv("secret")
+
+        print('"' + consumerKey +'"')
+        print('"' + consumerSecret +'"')
+        print('"' + accessKey +'"')
+        print('"' + secret +'"')
 
         oauth = OAuth1(consumerKey,
                    client_secret=consumerSecret,
